@@ -21,6 +21,9 @@
     0% {
       transform: scaleX(0);
     }
+    100% {
+      opacity: 1;
+    }
   }
   @keyframes typing {
     to {
@@ -66,7 +69,8 @@
   }
 
   .hero-image img {
-    @apply z-10 relative h-60 aspect-square justify-center items-center;
+    @apply z-10 relative h-60 aspect-square justify-center items-center animate-slide opacity-0;
+    animation-delay: 2s;
   }
 }
 

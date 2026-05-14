@@ -265,8 +265,11 @@
     z-index: 10;
     aspect-ratio: 1 / 1;
     height: calc(var(--spacing) * 60);
+    animation: var(--animate-slide);
     align-items: center;
     justify-content: center;
+    opacity: 0%;
+    animation-delay: 2s;
   }
 }
 @layer base {
@@ -449,6 +452,9 @@
 @keyframes slider {
   0% {
     transform: scaleX(0);
+  }
+  100% {
+    opacity: 1;
   }
 }
 @keyframes typing {
