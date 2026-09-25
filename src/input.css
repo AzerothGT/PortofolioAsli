@@ -35,7 +35,7 @@
 
 @layer components {
   .hero {
-    @apply bg-gray-900 flex justify-center px-10;
+    @apply bg-gray-900 flex justify-center px-4 sm:px-10;
   }
 
   .hero-container {
@@ -46,9 +46,9 @@
   }
 
   .hero-title {
-    @apply relative text-primary text-center 
-           text-8xl md:text-9xl
-           inline-block mx-auto overflow-hidden;
+    @apply relative text-primary text-center
+           text-6xl sm:text-8xl md:text-9xl
+           inline-block w-fit max-w-full mx-auto overflow-hidden;
   }
 
   .hero-title::after {
